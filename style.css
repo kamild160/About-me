@@ -1,0 +1,248 @@
+div {
+    font-family: 'Karla', sans-serif;
+    
+}
+body{
+  font-family: 'Karla', sans-serif;
+}
+#bookcase{
+    height: 400px;
+    width: calc(100% - 20px);
+    margin: 10px;
+}
+
+.centered {
+  padding: 20px;
+  width:calc(100% - 500px);
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7) ;
+  background-size: 800px 800px;
+  font-size: 80px;
+  color: rgb(0, 0, 0);
+}
+#Secondblock{
+    height:800px;
+    text-align: center;
+}
+table{
+    text-align: center;
+}
+#profilepic{
+    border-radius: 50%;
+    height:200px;
+    width:200px;
+    max-height:40%;
+    width:auto;
+    flex-basis: 40%;
+    margin: 40px
+
+    }
+#descritpion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  footer{
+ 
+    background-color: #7e9a9b;
+    margin: 10px;
+    
+  
+       
+  }
+#formelement{
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    text-align: center;
+}
+
+label{
+    font-size: 20px;
+}
+
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  #socials{
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+   
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+ /*smartphone*/
+  @media only screen and (max-width: 767px) {
+    .centered {
+      font-size: 15px !important;
+      width: auto;
+      top: 8%;
+      padding: 0;
+    }
+  }
+  /*tablets*/
+  @media only screen and (min-width: 768px) and  (max-width: 1100px) {
+    .centered {
+      font-size: 50px !important;
+      width: auto;
+      top: 20%;
+      padding: 0;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+  #bookcase{
+    height:auto;
+  }}
+
+  
+  
+  .column1 {
+    float: left;
+    width: 33%;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+      }
+      .column2 {
+        float: left;
+        width: 33%;
+        padding: 5px;
+        box-sizing: border-box;
+        position: relative;
+          }
+          .column3 {
+            float: left;
+            width: 33%;
+            padding: 5px;
+            box-sizing: border-box;
+            position: relative;
+              }
+
+  .row{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin:auto;
+    
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ffffffbe;
+  }
+  .column1:hover .overlay {
+    opacity: 1;
+  }
+  .column2:hover .overlay {
+    opacity: 1;
+  }
+  .column3:hover .overlay {
+    opacity: 1;
+  }
+  .text {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  @media only screen and (max-width: 767px) {
+    .text{
+      font-size: 8px;
+    }
+    #profilepic{
+      height:100px;
+    }
+  }
+
+  #boutme{
+    font-size: 30px;
+  }
